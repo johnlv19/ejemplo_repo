@@ -1,34 +1,43 @@
-{% extends 'core/base.html' %}
-
-{%block content %}{% load  static %}
+{% extends 'core/base.html' %} {%block content %}{% load static %}
 
 <main id="blog">
-    <div class="contenedor">
-        <div class="contenido">
-            <div class="post">
-                <h1 class="titulo">Soporte</h1>
-                <p>
-                    Ponemos a su disposición el siguiente espacio para atender sus dudas relacionadas con los productos o servicios que se muestran.
-                    Usted podrá seleccionar el tema de ayuda llenando el siguiente formulario que se encuentra en la parte inferior de la página, 
-                    escoja el tema referente a su inquietud y complete los campos solicitados.
-                    A cada solicitud de soporte se le asigna un número de caso único que podrá usar para realizar el seguimiento.
-                    La respuesta se enviará al correo electrónico registrado en el formulatio
-                    Es un gusto poder ayudarle. Atentamente John's Technologys.
-                </p>
-            </div>	
-        </div>
+  <div class="contenedor">
+    <div class="contenido">
+      <div class="post">
+        <h1 class="titulo">Soporte</h1>
+        <p>
+          Ponemos a su disposición el siguiente espacio para atender sus dudas
+          relacionadas con los productos o servicios que se muestran. Usted
+          podrá seleccionar el tema de ayuda llenando el siguiente formulario
+          que se encuentra en la parte inferior de la página, escoja el tema
+          referente a su inquietud y complete los campos solicitados. A cada
+          solicitud de soporte se le asigna un número de caso único que podrá
+          usar para realizar el seguimiento. La respuesta se enviará al correo
+          electrónico registrado en el formulatio Es un gusto poder ayudarle.
+          Atentamente John's.
+        </p>
+      </div>
     </div>
-    <form  action="http://127.0.0.1:8000/"class="form-regis" method="get">
+  </div>
+  <form action="http://127.0.0.1:8000/" class="form-regis" method="get">
     <h3>ATENCION AL CLIENTE</h3>
-    <p>Escriba su Nombre</p><input type="text" name="nom"  value="" placeholder="NOMBRE" required>
-    <p>Escriba su Correo electronico</p><input type="text" name="ema"  value="" placeholder="EMAIL" required>
-    <p>Escriba su numero de Telefono</p><input type="text" name="tel"  value="" placeholder="TELEFONO">
-    <p>Describa su necesidad</p><textarea name="message" rows="10" cols="30" placeholder="DESCRIBA"required></textarea>
-    <input type="submit" value="GUARDAR">
-
-</form>
+    <p>Escriba su Nombre</p>
+    <input type="text" name="nom" value="" placeholder="NOMBRE" required />
+    <p>Escriba su Correo electronico</p>
+    <input type="text" name="ema" value="" placeholder="EMAIL" required />
+    <p>Escriba su numero de Telefono</p>
+    <input type="text" name="tel" value="" placeholder="TELEFONO" />
+    <p>Describa su necesidad</p>
+    <textarea
+      name="message"
+      rows="10"
+      cols="30"
+      placeholder="DESCRIBA"
+      required
+    ></textarea>
+    <input type="submit" value="GUARDAR" />
+  </form>
 </main>
-<br>
+<br />
 
 {%endblock%}
-
