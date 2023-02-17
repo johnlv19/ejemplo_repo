@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Technologys</title>
+	{% load  static %}
+
+	<link rel="stylesheet"  href="{% static 'style.css' %}">
+	<link rel="icon" href="{% static 'logo3.png' %}" type="image/png">
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header>
+
+		<nav class="navbar">
+            
+			<div class="contenedor">
+                <img src="{% static 'logo.png' %}" wight="18px" height="58px">
+				<a href={% url 'home'%}>Inicio</a>
+				<a href={% url 'about-me'%}>Servicios y Precios</a>
+				<a href={% url 'contact'%}>Acerca De</a>
+				<a href={% url 'portfolio'%}>Soporte</a>
+			</div>
+		</nav>
+		<div class="contenedor-imagen">
+			<a href="#">
+				<img src="https://media.kingston.com/kingston/hero/ktc-hero-blog-gaming-cloud-gaming-advantages-disadvantages-lg.jpg" alt="">
+			</a>
+		</div>
+	</header>
+    <!-- CONTENIDO -- TEMPLATE TAGS -->
+    {%block content %}{% endblock %}
+
+	<footer>
+		<div class="pieP">
+			<h3 class="titulo-seccion">Contacta conmigo</h3>
+			<p>Tel: 0995245758</p>
+	    </div>
+		<div class="copy">
+			<p>© John's Technology Corporations, 2023</p>
+
+		</div>
+	</footer>
+</body>
+</html>
